@@ -4,12 +4,9 @@ class Hello {
 
   public $message ;
 
-  function affichage($msg){
-    $this->message = $msg;
-    return $this->message;
-  }
-
  }
 $bonjour = new  Hello();
-echo $bonjour->affichage('MyClass class has initialized !'."\n");
+$bonjour->message = "MyClass class has initialized ! \n";
+
+echo $bonjour->message;
 ?>
